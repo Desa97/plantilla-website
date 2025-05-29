@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meet The Manager</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <style>
+    :root {
+      --amarillo: #ffc107;
+      --azul: #183c6e;
+    }
+
+    body {
+      background-color: #f8f9fa;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    .manager-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: rgb(204, 202, 202);
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      margin: 60px auto;
+      max-width: 1200px;
+      position: relative;
+    }
+
+    .text-content h2 {
+      font-size: 24px;
+      color: black;
+      font-weight: bold;
+    }
+
+    .text-content h1 {
+      font-size: 36px;
+      color: #007bff;
+      margin-bottom: 20px;
+    }
+
+    .text-content p {
+      color: #444;
+      font-size: 16px;
+    }
+
+    ul {
+      display: flex;
+      gap: 20px;
+      padding-left: 0;
+      margin-top: 20px;
+    }
+
+    ul > li {
+      list-style: none;
+      font-size: 24px;
+    }
+
+    .image-content {
+      width: 300px;
+      height: 350px;
+      background-position: center;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      font-size: 9px;
+      top: 30%;
+      right: 2%;
+      z-index: 20;
+    }
+
+    .decor-circle {
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      background-color: var(--amarillo);
+      border-radius: 50%;
+      left: 50%;
+      top: 60%;
+      transform: translate(-50%, -50%);
+      z-index: 0;
+      opacity: 0.4;
+    }
+
+    .top-corner {
+      position: absolute;
+      left: 73%;
+      top: 0;
+      right: 0;
+      width: 180px;
+      font-size: 9px;
+      z-index: 20;
+      right: 2%;
+
+    }
+
+    .logo {
+      position: absolute;
+      left: 19%;
+      width: 100px;
+      font-size: 20px;
+      top: 1%;
+      z-index: 20;
+      right: 60%;
+      
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Logo -->
+  <img src="./logo-remove.png" alt="Logo" class="logo">
+
+  <!-- Esquina azul decorativa -->
+  <img src="./icon4-removeb.png" alt="Esquina Azul" class="top-corner">
+
+  <div class="container manager-section">
+    <div class="text-content col-md-7">
+      <h2>Meet The Manager</h2>
+      <h1>Richard Hernandez</h1>
+      <p>
+        Richard Hernandez parece ser un profesional destacado en su área, según la presentación en la imagen. Su rol como gerente sugiere que tiene habilidades de liderazgo, trabajo en equipo y experiencia en la gestión de personas y proyectos.
+      </p>
+      <ul>
+        <li>🪴</li>
+        <li>➕</li>
+        <li>🧭</li>
+      </ul>
+    </div>
+
+    <div class="col-md-5 d-flex justify-content-center align-items-center position-relative">
+      <img src="./richardhernadez.jpg" alt="" class="image-content">
+    </div>
+
+    <!-- Círculo decorativo -->
+    <div class="decor-circle"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
